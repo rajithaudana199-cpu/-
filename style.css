@@ -1,0 +1,38 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+body { background-color: #1a1a1a; color: #e0e0e0; }
+
+.hero { 
+    position: relative; background: linear-gradient(135deg, rgba(20, 20, 20, 0.95), rgba(40, 40, 40, 0.8)), url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1920');
+    background-size: cover; background-position: center; background-attachment: fixed; text-align: center; padding: 80px 20px; border-bottom: 5px solid #ff6a00;
+}
+
+.main-logo { width: 90%; max-width: 850px; animation: breathing 3s ease-in-out infinite; filter: drop-shadow(0px 0px 25px rgba(255, 255, 255, 0.3)); }
+@keyframes breathing { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+
+.hero-tagline { font-size: 2.2rem; color: #ffd700; margin-top: 20px; text-transform: uppercase; }
+
+.services-container { max-width: 1200px; margin: 60px auto; padding: 0 20px; }
+.section-title { text-align: center; font-size: 2.4rem; margin-bottom: 50px; color: #ffffff; }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+
+.service-card { background: #262626; padding: 35px 25px; border-radius: 8px; text-align: center; border-top: 3px solid #ff6a00; cursor: pointer; transition: 0.3s; }
+.service-card:hover { transform: translateY(-8px); background: #2d2d2d; border-top: 3px solid #ff9d00; }
+.highlight-card { border-top: 3px solid #ffd700 !important; }
+.icon-box { font-size: 2.8rem; color: #ff6a00; margin-bottom: 20px; }
+
+.social-links { display: flex; justify-content: center; gap: 20px; }
+.btn-social { padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; color: white; display: flex; align-items: center; gap: 10px; border: 2px solid rgba(255,255,255,0.2); animation: pulse-animation 2s infinite; }
+.whatsapp { background-color: #25d366; }
+.facebook { background-color: #1877f2; }
+
+@keyframes pulse-animation {
+    0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(255, 255, 255, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+}
+
+.btn-social:hover { animation: none; transform: scale(1.1); box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); }
+.social-links-bottom { margin-top: 60px; padding: 30px; background: #262626; border-radius: 10px; }
+
+.about-section { max-width: 900px; margin: 80px auto; padding: 40px; background: #262626; border-radius: 15px; text-align: center; border-bottom: 5px solid #ff6a00; }
+footer { text-align: center; padding: 25px; background-color: #111111; border-top: 1px solid #222; }
